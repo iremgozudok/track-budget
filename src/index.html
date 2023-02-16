@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="container mx-auto mt-[80px] uppercase text-[40px] mb-2">track your budget</h1>
+    <section class="container mx-auto">
+        <div class="grid grid-cols-3 gap-6">
+            <div class="col-span-1 space-y-[26px]">
+                <div class="flex flex-col gap-3 p-3 rounded-md shadow-[5px_10px_15px_5px_rgba(0,0,0,0.1)]">
+                    <label for="budget">Enter Your Budget</label>
+                    <input class="border border-[#D2D2D2] rounded-sm" type="number" id="budget" name="budget"/>
+                    <button class="bg-[#09C576] text-white w-36 px-5 py-2 rounded-md">Save Budget</button>
+                </div>
+                <div class="flex flex-col gap-3 p-3 rounded-md shadow-[5px_10px_15px_5px_rgba(0,0,0,0.1)]">
+                    <label for="name">Expense Name</label>
+                    <input class="border border-[#D2D2D2] rounded-sm" type="text" id="name" name="name"/>
+                    <label for="amount">Expense Amount</label>
+                    <input class="border border-[#D2D2D2] rounded-sm" type="number" id="amount" name="amount"/>
+                    <button class="bg-[#09C576] text-white w-36 px-5 py-2 rounded-md">Add Expense</button>
+                </div>
+                
+            </div>
+            <div class="col-span-2 ">
+                <div class="flex justify-between px-28 py-7 rounded-lg shadow-[5px_10px_15px_5px_rgba(0,0,0,0.1)]">
+                    <div class="flex flex-col items-center text-center">
+                        <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_22)">
+                            <path d="M37.5 3.125V71.875" stroke="black" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M53.125 15.625H29.6875C26.7867 15.625 24.0047 16.7773 21.9535 18.8285C19.9023 20.8797 18.75 23.6617 18.75 26.5625C18.75 29.4633 19.9023 32.2453 21.9535 34.2965C24.0047 36.3477 26.7867 37.5 29.6875 37.5H45.3125C48.2133 37.5 50.9953 38.6523 53.0465 40.7035C55.0977 42.7547 56.25 45.5367 56.25 48.4375C56.25 51.3383 55.0977 54.1203 53.0465 56.1715C50.9953 58.2227 48.2133 59.375 45.3125 59.375H18.75" stroke="black" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_22">
+                            <rect width="75" height="75" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="text-[24px] mb-[56px]">Budget</div>
+                        <div class="text-[#267CFE] text-[36px] font-bold">2500 ₺</div>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_25)">
+                            <path d="M65.625 12.5H9.375C5.92322 12.5 3.125 15.2982 3.125 18.75V56.25C3.125 59.7018 5.92322 62.5 9.375 62.5H65.625C69.0768 62.5 71.875 59.7018 71.875 56.25V18.75C71.875 15.2982 69.0768 12.5 65.625 12.5Z" stroke="black" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.125 31.25H71.875" stroke="black" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_25">
+                            <rect width="75" height="75" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="text-[24px] mb-[56px]">Expenses</div>
+                        <div class="text-[#D90000] text-[36px] font-bold">250 ₺</div>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <svg width="65" height="75" viewBox="0 0 65 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.75 4.25L4.375 16.75V60.5C4.375 62.1576 5.03348 63.7473 6.20558 64.9194C7.37768 66.0915 8.9674 66.75 10.625 66.75H54.375C56.0326 66.75 57.6223 66.0915 58.7944 64.9194C59.9665 63.7473 60.625 62.1576 60.625 60.5V16.75L51.25 4.25H13.75Z" stroke="black" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                          
+                        <div class="text-[24px] mb-[56px]">Balance</div>
+                        <div class="text-[#09C576] text-[36px] font-bold">2250 ₺</div>
+                    </div>
+                </div>
+                <div class="p-4 rounded-lg shadow-[5px_10px_15px_5px_rgba(0,0,0,0.1)] mt-10">
+                    <h1 class="text-[36px]">Expenses</h1>
+                    <ul class="list-disc ml-6">
+                        <li class="flex justify-between">
+                            <p>Mutfak giderleri</p>
+                            <p>tarih</p>
+                            <p>100 ₺</p>
+                            <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.8334 5V16.6667C12.8334 17.1087 12.6578 17.5326 12.3452 17.8452C12.0326 18.1577 11.6087 18.3333 11.1667 18.3333H2.83335C2.39133 18.3333 1.9674 18.1577 1.65484 17.8452C1.34228 17.5326 1.16669 17.1087 1.16669 16.6667V5M3.66669 5V3.33333C3.66669 2.89131 3.84228 2.46738 4.15484 2.15482C4.4674 1.84226 4.89133 1.66667 5.33335 1.66667H8.66669C9.10871 1.66667 9.53264 1.84226 9.8452 2.15482C10.1578 2.46738 10.3334 2.89131 10.3334 3.33333V5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>             
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>
